@@ -1,12 +1,15 @@
 # our main file
 
-import speech_recognition as sr
 
 # criar reconhecedor
-r = sr.Recognizer()
+import speech_recognition as sr # importa a lib de reconhecimento de voz
 
-# Abrir dispositivo de audio para captura 
-with sr.Microphone() as source: 
-    audio = r.listen(source) # Definir o microfone como fonte de audio
 
-    print(r.recognize_google(audio))
+r = sr.Recognizer() # cria um reconhecedor
+
+
+with sr.Microphone() as source: # reconhece o microfone como fonte de audio
+    while True:
+        r.adjust_for_ambient_noise(source) # ajusta a sensibilidade do dispositivo de audio para diminuir o som ambiente
+        audio = r.listen(source) # define o microfone como a fonte do audio 
+        print(r.recognize_google(audio, language='pt'))
