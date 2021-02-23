@@ -5,5 +5,5 @@
 
  Tecnologias:
     Reconhecimento de voz : google para online e vosk para ofline
-    Sintese de voz
+    Sintese de voz: pyttx3
     Inteligência artificial 
