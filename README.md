@@ -4,6 +4,6 @@
   Deve ser fácil de aprender, rápido de fazer e expansível
 
  Tecnologias:
-    Reconhecimento de voz
+    Reconhecimento de voz : google para online e vosk para ofline
     Sintese de voz
-    Inteligência artificial #
+    Inteligência artificial 
